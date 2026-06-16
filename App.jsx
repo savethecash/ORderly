@@ -222,16 +222,6 @@ const CAT_COLORS = {
   Tools:"#b2bec3", Baby:"#a29bfe", "Food & Grocery":"#00cec9", Health:"#55efc4", Travel:"#74b9ff"
 };
 
-const CATEGORIES = ["All", ...new Set(PRODUCTS.map(p => p.category))];
-const TRACKING_STEPS = ["Order Placed","Payment Confirmed","Preparing Your Order","Picked Up by Carrier","In Transit","Out for Delivery","Delivered!"];
-const AGE_BRACKETS = ["18-24","25-34","35-44","45-54","55+"];
-const CAT_COLORS = {
-  Kitchen:"#ff9900", Electronics:"#007185", Sports:"#c45500", Home:"#6c5ce7",
-  Garden:"#00b894", Beauty:"#e84393", "Books & Office":"#0984e3", Clothing:"#6d4c41",
-  "Pet Supplies":"#fd79a8", "Toys & Games":"#fdcb6e", Automotive:"#636e72",
-  Tools:"#b2bec3", Baby:"#a29bfe", "Food & Grocery":"#00cec9", Health:"#55efc4", Travel:"#74b9ff"
-};
-
 // ── STORAGE ───────────────────────────────────────────────────────────────────
 const USERS_KEY    = "orderly-users";
 const ORDERS_KEY   = "orderly-orders";
