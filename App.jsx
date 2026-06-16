@@ -221,15 +221,6 @@ const CAT_COLORS = {
   "Pet Supplies":"#fd79a8", "Toys & Games":"#fdcb6e", Automotive:"#636e72",
   Tools:"#b2bec3", Baby:"#a29bfe", "Food & Grocery":"#00cec9", Health:"#55efc4", Travel:"#74b9ff"
 };
-
-// ── STORAGE ───────────────────────────────────────────────────────────────────
-const USERS_KEY    = "orderly-users";
-const ORDERS_KEY   = "orderly-orders";
-const IMPULSE_KEY  = "orderly-impulse";
-const WISHLIST_KEY = "orderly-wishlist";
-const loadJSON = (k, fb) => { try { const v = localStorage.getItem(k); return v ? JSON.parse(v) : fb; } catch { return fb; } };
-const saveJSON = (k, v)  => { try { localStorage.setItem(k, JSON.stringify(v)); } catch {} };
-
 // ── HELPERS ───────────────────────────────────────────────────────────────────
 const uid      = () => Math.random().toString(36).slice(2, 10);
 const newOrder = () => String(Math.floor(100000000 + Math.random() * 900000000));
