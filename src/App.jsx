@@ -1,5 +1,24 @@
 import { useState } from "react";
+// ── IMAGE HOOK ────────────────────────────────────────────────────────────────
+function useProductImage(productName) {
+  const [imgUrl, setImgUrl] = useState(null);
 
+  useEffect(() => {
+    const key = import.meta.env.VITE_GOOGLE_API_KEY;
+    const cx  = import.meta.env.VITE_GOOGLE_CSE_ID;
+    if (!key || !cx) return;
+
+    fetch(`https://www.googleapis.com/customsearch/v1?key=${key}&cx=${cx}&q=${encodeURIComponent(productName)}&searchType=image&num=1&imgSize=medium&safe=active`)
+      .then(r => r.json())
+      .then(data => {
+        const url = data?.items?.[0]?.link;
+        if (url) setImgUrl(url);
+      })
+      .catch(() => {});
+  }, [productName]);
+
+  return imgUrl;
+}
 // ── DATA ──────────────────────────────────────────────────────────────────────
 const PRODUCTS = [
   // KITCHEN
