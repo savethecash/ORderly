@@ -1,23 +1,31 @@
 import { useState, useEffect } from "react";
 // ── IMAGE HOOK ────────────────────────────────────────────────────────────────
-function useProductImage(productName) {
-  const [imgUrl, setImgUrl] = useState(null);
+const imageCache = {};
+
+function useProductImage(productName, enabled) {
+  const [imgUrl, setImgUrl] = useState(() => imageCache[productName] || null);
 
   useEffect(() => {
+    if (!enabled || imageCache[productName]) return;
     const key = import.meta.env.VITE_GOOGLE_API_KEY;
     const cx  = import.meta.env.VITE_GOOGLE_CSE_ID;
     if (!key || !cx) return;
 
-    fetch(`https://www.googleapis.com/customsearch/v1?key=${key}&cx=${cx}&q=${encodeURIComponent(productName)}&searchType=image&num=1&imgSize=medium&safe=active`)
-      .then(r => r.json())
-      .then(data => {
-        const url = data?.items?.[0]?.link;
-        if (url) setImgUrl(url);
-      })
-      .catch(() => {});
-  }, [productName]);
+    const timer = setTimeout(() => {
+      fetch(`https://www.googleapis.com/customsearch/v1?key=${key}&cx=${cx}&q=${encodeURIComponent(productName)}&searchType=image&num=1&imgSize=medium&safe=active`)
+        .then(r => r.json())
+        .then(data => {
+          const url = data?.items?.[0]?.link;
+          if (url) { imageCache[productName] = url; setImgUrl(url); }
+        })
+        .catch(() => {});
+    }, 300);
+
+    return () => clearTimeout(timer);
+  }, [productName, enabled]);
 
   return imgUrl;
+}
 }
 // ── DATA ──────────────────────────────────────────────────────────────────────
 const PRODUCTS = [
