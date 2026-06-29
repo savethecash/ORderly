@@ -1,4 +1,5 @@
 import { useState } from "react";
+const PEXELS_KEY = import.meta.env.VITE_PEXELS_KEY;
 // ── IMAGE HOOK ────────────────────────────────────────────────────────────────
 const PRODUCT_IMAGES = {
   // KITCHEN
