@@ -245,7 +245,7 @@ const PRODUCTS = [
   { id: 176, name: "Packable Day Pack 20L Ultralight",              price: 22.99, rating: 4.6, reviews: 12093, swift: true,  img: "🎒", tag: "",            category: "Travel" },
   { id: 177, name: "Silicone Travel Bottles Leak-Proof 6-Pack",     price: 14.99, rating: 4.5, reviews: 21034, swift: true,  img: "🧴", tag: "Best Seller", category: "Travel" },
 ];
-const CATEGORIES = ["All", ...new Set(PRODUCTS.map(p => p.category))];
+const CATEGORIES = ["All", ...new Set(PRODUCTS.map(p => p.category))]; // v3
 const TRACKING_STEPS = ["Order Placed","Payment Confirmed","Preparing Your Order","Picked Up by Carrier","In Transit","Out for Delivery","Delivered!"];
 const AGE_BRACKETS = ["18-24","25-34","35-44","45-54","55+"];
 const CAT_COLORS = {
