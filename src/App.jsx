@@ -225,23 +225,6 @@ const PRODUCTS = [
   { id: 176, name: "Packable Day Pack 20L Ultralight",              price: 22.99, rating: 4.6, reviews: 12093, swift: true,  img: "🎒", tag: "",            category: "Travel" },
   { id: 177, name: "Silicone Travel Bottles Leak-Proof 6-Pack",     price: 14.99, rating: 4.5, reviews: 21034, swift: true,  img: "🧴", tag: "Best Seller", category: "Travel" },
 ];
-
-const CATEGORIES = ["All", ...new Set(PRODUCTS.map(p => p.category))];
-const TRACKING_STEPS = ["Order Placed","Payment Confirmed","Preparing Your Order","Picked Up by Carrier","In Transit","Out for Delivery","Delivered!"];
-const AGE_BRACKETS = ["18-24","25-34","35-44","45-54","55+"];
-const CAT_COLORS = {
-  Kitchen:"#ff9900", Electronics:"#007185", Sports:"#c45500", Home:"#6c5ce7",
-  Garden:"#00b894", Beauty:"#e84393", "Books & Office":"#0984e3", Clothing:"#6d4c41",
-  "Pet Supplies":"#fd79a8", "Toys & Games":"#fdcb6e", Automotive:"#636e72",
-  Tools:"#b2bec3", Baby:"#a29bfe", "Food & Grocery":"#00cec9", Health:"#55efc4", Travel:"#74b9ff"
-};
-
-// ── STORAGE ───────────────────────────────────────────────────────────────────
-const USERS_KEY   = "orderly-users";
-const ORDERS_KEY  = "orderly-orders";
-const IMPULSE_KEY = "orderly-impulse";
-const loadJSON = (k, fb) => { try { const v = localStorage.getItem(k); return v ? JSON.parse(v) : fb; } catch { return fb; } };
-
 const CATEGORIES = ["All", ...new Set(PRODUCTS.map(p => p.category))];
 const TRACKING_STEPS = ["Order Placed","Payment Confirmed","Preparing Your Order","Picked Up by Carrier","In Transit","Out for Delivery","Delivered!"];
 const AGE_BRACKETS = ["18-24","25-34","35-44","45-54","55+"];
