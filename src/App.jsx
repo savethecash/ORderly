@@ -1122,7 +1122,7 @@ export default function App() {
           </div>
           {view==="browse" && (
             <div style={{ flex:1, display:"flex", maxWidth:500 }}>
-              <input value={search} onChange={e => setSearch(e.target.value)} placeholder="Search 177 products…"
+              <input value={search} onChange={e => setSearch(e.target.value)} placeholder="Search products…"
                 style={{ flex:1, padding:"7px 12px", fontSize:14, border:"none", borderRadius:"6px 0 0 6px", outline:"none", minWidth:0 }} />
               <div style={{ background:"#febd69", padding:"0 12px", borderRadius:"0 6px 6px 0", display:"flex", alignItems:"center" }}>🔍</div>
             </div>
