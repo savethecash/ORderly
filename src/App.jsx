@@ -316,7 +316,150 @@ const PRODUCTS = [
   { id: 237, name: "Electric Lawn Mower Cordless 40V", price: 299.99, rating: 4.7, reviews: 8732, swift: false, img: "🌿", tag: "Best Seller", category: "Garden" },
   { id: 238, name: "Pressure Washer Electric 2300 PSI", price: 149.99, rating: 4.6, reviews: 12043, swift: false, img: "💦", tag: "Top Pick", category: "Garden" },
   { id: 239, name: "Bird Feeder Squirrel Proof Large", price: 34.99, rating: 4.6, reviews: 9821, swift: true, img: "🐦", tag: "", category: "Garden" },
-  { id: 240, name: "Outdoor String Lights 100ft", price: 29.99, rating: 4.7, reviews: 22041, swift: true, img: "✨", tag:
+  { id: 240, name: "Outdoor String Lights 100ft", price: 29.99, rating: 4.7, reviews: 22041, swift: true, img: "✨", tag: "Best Seller", category: "Garden" },
+  { id: 241, name: "Fire Pit Propane 50000 BTU", price: 199.99, rating: 4.7, reviews: 7432, swift: false, img: "🔥", tag: "#1 Pick", category: "Garden" },
+  { id: 242, name: "Hammock with Stand Portable", price: 79.99, rating: 4.7, reviews: 11203, swift: true, img: "🌴", tag: "Top Pick", category: "Garden" },
+  { id: 243, name: "Outdoor Patio Umbrella 10ft", price: 89.99, rating: 4.5, reviews: 8732, swift: false, img: "☂️", tag: "", category: "Garden" },
+  { id: 244, name: "Raised Planter Box Cedar 4x8ft", price: 129.99, rating: 4.8, reviews: 5231, swift: false, img: "🌱", tag: "Best Seller", category: "Garden" },
+  { id: 245, name: "Garden Hose Expandable 100ft", price: 39.99, rating: 4.5, reviews: 19203, swift: true, img: "💧", tag: "Top Pick", category: "Garden" },
+
+  // BEAUTY (continued)
+  { id: 246, name: "Gua Sha Facial Tool Rose Quartz", price: 19.99, rating: 4.6, reviews: 14320, swift: true, img: "💆", tag: "", category: "Beauty" },
+  { id: 247, name: "Hair Straightener Titanium 1-Inch", price: 59.99, rating: 4.7, reviews: 18320, swift: true, img: "💇", tag: "Best Seller", category: "Beauty" },
+  { id: 248, name: "Curling Wand 1.25-Inch Ceramic", price: 49.99, rating: 4.6, reviews: 12043, swift: true, img: "💇", tag: "Top Pick", category: "Beauty" },
+  { id: 249, name: "Derma Roller 0.25mm Titanium", price: 19.99, rating: 4.5, reviews: 9821, swift: true, img: "✨", tag: "", category: "Beauty" },
+  { id: 250, name: "LED Face Mask Light Therapy", price: 79.99, rating: 4.5, reviews: 6732, swift: true, img: "😊", tag: "Top Pick", category: "Beauty" },
+  { id: 251, name: "Niacinamide Serum 10% + Zinc", price: 14.99, rating: 4.7, reviews: 41023, swift: true, img: "✨", tag: "Best Seller", category: "Beauty" },
+  { id: 252, name: "Body Scrub Coffee Coconut 12oz", price: 16.99, rating: 4.6, reviews: 8732, swift: true, img: "🧴", tag: "", category: "Beauty" },
+  { id: 253, name: "Epilator Cordless Waterproof", price: 49.99, rating: 4.4, reviews: 7432, swift: true, img: "✨", tag: "", category: "Beauty" },
+  { id: 254, name: "Makeup Brush Set 18-Piece", price: 22.99, rating: 4.7, reviews: 22041, swift: true, img: "💄", tag: "Top Pick", category: "Beauty" },
+  { id: 255, name: "Perfume Atomizer Travel Set 5-Pack", price: 17.99, rating: 4.5, reviews: 11203, swift: true, img: "🌸", tag: "", category: "Beauty" },
+
+  // PET SUPPLIES (continued)
+  { id: 256, name: "Cat Tree Tower 67-Inch Multi-Level", price: 89.99, rating: 4.7, reviews: 14320, swift: false, img: "🐱", tag: "Best Seller", category: "Pet Supplies" },
+  { id: 257, name: "Dog Harness No-Pull Reflective", price: 29.99, rating: 4.8, reviews: 31204, swift: true, img: "🐕", tag: "#1 Pick", category: "Pet Supplies" },
+  { id: 258, name: "GPS Pet Tracker Waterproof", price: 49.99, rating: 4.5, reviews: 8732, swift: true, img: "📍", tag: "Top Pick", category: "Pet Supplies" },
+  { id: 259, name: "Dog Stroller All-Terrain 3-Wheel", price: 89.99, rating: 4.5, reviews: 5231, swift: false, img: "🐕", tag: "", category: "Pet Supplies" },
+  { id: 260, name: "Aquarium Fish Tank 20 Gallon", price: 99.99, rating: 4.6, reviews: 6732, swift: false, img: "🐠", tag: "Top Pick", category: "Pet Supplies" },
+  { id: 261, name: "Bird Cage Large Wrought Iron", price: 79.99, rating: 4.5, reviews: 4321, swift: false, img: "🦜", tag: "", category: "Pet Supplies" },
+  { id: 262, name: "Dog Seat Cover Waterproof SUV", price: 39.99, rating: 4.7, reviews: 19203, swift: true, img: "🚗", tag: "Best Seller", category: "Pet Supplies" },
+  { id: 263, name: "Automatic Cat Laser Toy Interactive", price: 24.99, rating: 4.6, reviews: 12043, swift: true, img: "🐱", tag: "Top Pick", category: "Pet Supplies" },
+
+  // TOYS & GAMES (continued)
+  { id: 264, name: "Drone Mini for Kids Beginners", price: 39.99, rating: 4.5, reviews: 8732, swift: true, img: "🚁", tag: "Top Pick", category: "Toys & Games" },
+  { id: 265, name: "Watercolor Paint Set 48 Colors", price: 24.99, rating: 4.7, reviews: 14320, swift: true, img: "🎨", tag: "", category: "Toys & Games" },
+  { id: 266, name: "Telescope for Kids 70mm Refractor", price: 59.99, rating: 4.5, reviews: 6732, swift: false, img: "🔭", tag: "Top Pick", category: "Toys & Games" },
+  { id: 267, name: "Chemistry Set Science Kit 333 Experiments", price: 44.99, rating: 4.6, reviews: 8901, swift: true, img: "🧪", tag: "Best Seller", category: "Toys & Games" },
+  { id: 268, name: "Dart Board Electronic 18-Inch", price: 59.99, rating: 4.6, reviews: 7432, swift: false, img: "🎯", tag: "", category: "Toys & Games" },
+  { id: 269, name: "Ping Pong Table Foldable Full Size", price: 299.99, rating: 4.6, reviews: 5231, swift: false, img: "🏓", tag: "Top Pick", category: "Toys & Games" },
+  { id: 270, name: "Pool Table 7-Foot Billiards", price: 799.99, rating: 4.7, reviews: 3241, swift: false, img: "🎱", tag: "#1 Pick", category: "Toys & Games" },
+  { id: 271, name: "Foosball Table Full Size", price: 399.99, rating: 4.6, reviews: 4321, swift: false, img: "⚽", tag: "Best Seller", category: "Toys & Games" },
+  { id: 272, name: "Arcade Game Machine 412 Games", price: 499.99, rating: 4.7, reviews: 3241, swift: false, img: "🕹️", tag: "#1 Pick", category: "Toys & Games" },
+
+  // AUTOMOTIVE (continued)
+  { id: 273, name: "Car Cover Waterproof All Weather", price: 49.99, rating: 4.6, reviews: 12043, swift: true, img: "🚗", tag: "", category: "Automotive" },
+  { id: 274, name: "OBD2 Scanner Bluetooth", price: 29.99, rating: 4.6, reviews: 18320, swift: true, img: "🔧", tag: "Top Pick", category: "Automotive" },
+  { id: 275, name: "Steering Wheel Lock Anti-Theft", price: 34.99, rating: 4.5, reviews: 8732, swift: true, img: "🔒", tag: "", category: "Automotive" },
+  { id: 276, name: "Car Air Freshener Vent Clip 6-Pack", price: 12.99, rating: 4.6, reviews: 22041, swift: true, img: "🌸", tag: "Best Seller", category: "Automotive" },
+  { id: 277, name: "Trunk Organizer Collapsible", price: 27.99, rating: 4.7, reviews: 14320, swift: true, img: "🚗", tag: "Top Pick", category: "Automotive" },
+  { id: 278, name: "Car Battery Jump Starter 2000A", price: 79.99, rating: 4.8, reviews: 19203, swift: true, img: "⚡", tag: "Best Seller", category: "Automotive" },
+
+  // TOOLS (continued)
+  { id: 279, name: "Impact Driver 20V Brushless", price: 99.99, rating: 4.8, reviews: 14320, swift: false, img: "🔧", tag: "Best Seller", category: "Tools" },
+  { id: 280, name: "Circular Saw 7-1/4 Inch 15A", price: 79.99, rating: 4.7, reviews: 9821, swift: false, img: "⚙️", tag: "Top Pick", category: "Tools" },
+  { id: 281, name: "Random Orbital Sander 5-Inch", price: 49.99, rating: 4.7, reviews: 11203, swift: false, img: "🔧", tag: "", category: "Tools" },
+  { id: 282, name: "Tool Bag 18-Inch Heavy Duty", price: 39.99, rating: 4.7, reviews: 8732, swift: true, img: "🧰", tag: "Top Pick", category: "Tools" },
+  { id: 283, name: "Work Light LED 5000 Lumens", price: 44.99, rating: 4.6, reviews: 7432, swift: true, img: "💡", tag: "", category: "Tools" },
+  { id: 284, name: "Allen Wrench Set Metric & SAE 30pc", price: 19.99, rating: 4.8, reviews: 28301, swift: true, img: "🔧", tag: "Best Seller", category: "Tools" },
+
+  // BABY (continued)
+  { id: 285, name: "Baby Swing Bluetooth Portable", price: 129.99, rating: 4.7, reviews: 8732, swift: false, img: "👶", tag: "Top Pick", category: "Baby" },
+  { id: 286, name: "Stroller Lightweight Umbrella", price: 99.99, rating: 4.6, reviews: 12043, swift: false, img: "👶", tag: "Best Seller", category: "Baby" },
+  { id: 287, name: "Baby Bouncer Seat Vibrating", price: 69.99, rating: 4.7, reviews: 9821, swift: false, img: "👶", tag: "", category: "Baby" },
+  { id: 288, name: "Baby Gate Pressure Mount 29-38in", price: 44.99, rating: 4.6, reviews: 14320, swift: true, img: "🚪", tag: "Top Pick", category: "Baby" },
+  { id: 289, name: "Convertible Car Seat 4-in-1", price: 199.99, rating: 4.8, reviews: 11203, swift: false, img: "🚗", tag: "#1 Pick", category: "Baby" },
+  { id: 290, name: "Baby Bathtub Foldable Newborn", price: 34.99, rating: 4.6, reviews: 8732, swift: true, img: "🛁", tag: "", category: "Baby" },
+
+  // FOOD & GROCERY (continued)
+  { id: 291, name: "Olive Oil Extra Virgin Cold Press 1L", price: 24.99, rating: 4.8, reviews: 18320, swift: true, img: "🫒", tag: "Best Seller", category: "Food & Grocery" },
+  { id: 292, name: "Truffle Hot Sauce Set 6 Bottles", price: 34.99, rating: 4.7, reviews: 7432, swift: true, img: "🌶️", tag: "Top Pick", category: "Food & Grocery" },
+  { id: 293, name: "Specialty Coffee Sampler 12 Bags", price: 44.99, rating: 4.8, reviews: 9821, swift: true, img: "☕", tag: "#1 Pick", category: "Food & Grocery" },
+  { id: 294, name: "Organic Quinoa Bulk 5lb", price: 19.99, rating: 4.7, reviews: 12043, swift: true, img: "🌾", tag: "", category: "Food & Grocery" },
+  { id: 295, name: "Dark Chocolate Gift Box 24pc", price: 29.99, rating: 4.8, reviews: 14320, swift: true, img: "🍫", tag: "Best Seller", category: "Food & Grocery" },
+  { id: 296, name: "Hot Sauce Making Kit DIY", price: 39.99, rating: 4.5, reviews: 5231, swift: true, img: "🌶️", tag: "", category: "Food & Grocery" },
+  { id: 297, name: "Sourdough Starter Kit Complete", price: 34.99, rating: 4.7, reviews: 6732, swift: true, img: "🍞", tag: "Top Pick", category: "Food & Grocery" },
+
+  // HEALTH (continued)
+  { id: 298, name: "Massage Chair Full Body Shiatsu", price: 499.99, rating: 4.7, reviews: 5231, swift: false, img: "💆", tag: "#1 Pick", category: "Health" },
+  { id: 299, name: "Infrared Sauna Blanket", price: 199.99, rating: 4.5, reviews: 4321, swift: false, img: "🧖", tag: "Top Pick", category: "Health" },
+  { id: 300, name: "Omega-3 Fish Oil 180 Softgels", price: 24.99, rating: 4.7, reviews: 41023, swift: true, img: "💊", tag: "Best Seller", category: "Health" },
+  { id: 301, name: "TENS Unit Muscle Stimulator", price: 39.99, rating: 4.6, reviews: 18320, swift: true, img: "⚡", tag: "Top Pick", category: "Health" },
+  { id: 302, name: "Posture Corrector Adjustable", price: 29.99, rating: 4.4, reviews: 22041, swift: true, img: "🧍", tag: "", category: "Health" },
+  { id: 303, name: "Collagen Peptides Powder 1lb", price: 34.99, rating: 4.7, reviews: 28301, swift: true, img: "💪", tag: "Best Seller", category: "Health" },
+  { id: 304, name: "Cold Plunge Tub Portable", price: 299.99, rating: 4.6, reviews: 3241, swift: false, img: "🧊", tag: "#1 Pick", category: "Health" },
+
+  // TRAVEL (continued)
+  { id: 305, name: "Hardside Luggage Set 3-Piece Spinner", price: 199.99, rating: 4.7, reviews: 14320, swift: false, img: "🧳", tag: "Best Seller", category: "Travel" },
+  { id: 306, name: "Travel Pillow Inflatable Neck", price: 19.99, rating: 4.5, reviews: 12043, swift: true, img: "😴", tag: "", category: "Travel" },
+  { id: 307, name: "Money Belt Hidden Security Waist", price: 22.99, rating: 4.7, reviews: 18320, swift: true, img: "💰", tag: "Top Pick", category: "Travel" },
+  { id: 308, name: "Travel Insurance Card Holder Slim", price: 14.99, rating: 4.6, reviews: 9821, swift: true, img: "💳", tag: "", category: "Travel" },
+  { id: 309, name: "Noise Cancelling Earplugs 50-Pair", price: 12.99, rating: 4.6, reviews: 22041, swift: true, img: "👂", tag: "Best Seller", category: "Travel" },
+  { id: 310, name: "Portable Luggage Scale Digital", price: 11.99, rating: 4.7, reviews: 31204, swift: true, img: "⚖️", tag: "Top Pick", category: "Travel" },
+
+  // SUPERCARS
+  { id: 311, name: "Lamborghini Huracán EVO Spyder", price: 287450.00, rating: 4.9, reviews: 312, swift: false, img: "🏎️", tag: "#1 Pick", category: "Supercars" },
+  { id: 312, name: "Ferrari 296 GTB — 830hp Twin-Turbo V6", price: 322000.00, rating: 4.9, reviews: 289, swift: false, img: "🏎️", tag: "Best Seller", category: "Supercars" },
+  { id: 313, name: "McLaren 720S Spider", price: 362000.00, rating: 4.9, reviews: 198, swift: false, img: "🏎️", tag: "Top Pick", category: "Supercars" },
+  { id: 314, name: "Porsche 911 Turbo S Cabriolet", price: 230450.00, rating: 4.9, reviews: 412, swift: false, img: "🏎️", tag: "Best Seller", category: "Supercars" },
+  { id: 315, name: "Aston Martin DB12 Volante", price: 245000.00, rating: 4.9, reviews: 187, swift: false, img: "🏎️", tag: "Top Pick", category: "Supercars" },
+  { id: 316, name: "Bentley Continental GT Speed", price: 274900.00, rating: 4.9, reviews: 231, swift: false, img: "🏎️", tag: "", category: "Supercars" },
+  { id: 317, name: "Rolls-Royce Ghost Black Badge", price: 432000.00, rating: 5.0, reviews: 143, swift: false, img: "🏎️", tag: "#1 Pick", category: "Supercars" },
+  { id: 318, name: "Bugatti Chiron Super Sport", price: 3900000.00, rating: 5.0, reviews: 67, swift: false, img: "🏎️", tag: "Limited Deal", category: "Supercars" },
+  { id: 319, name: "Mercedes-AMG GT 63 S E Performance", price: 189900.00, rating: 4.9, reviews: 341, swift: false, img: "🏎️", tag: "Best Seller", category: "Supercars" },
+  { id: 320, name: "Maserati GranTurismo Folgore EV", price: 198000.00, rating: 4.8, reviews: 156, swift: false, img: "🏎️", tag: "Top Pick", category: "Supercars" },
+  { id: 321, name: "Audi R8 V10 Performance Quattro", price: 201995.00, rating: 4.9, reviews: 278, swift: false, img: "🏎️", tag: "", category: "Supercars" },
+  { id: 322, name: "BMW M8 Competition Convertible", price: 144900.00, rating: 4.8, reviews: 312, swift: false, img: "🏎️", tag: "Top Pick", category: "Supercars" },
+  { id: 323, name: "Chevrolet Corvette Z06 Convertible", price: 109995.00, rating: 4.9, reviews: 521, swift: false, img: "🏎️", tag: "Best Seller", category: "Supercars" },
+  { id: 324, name: "Dodge Viper ACR Final Edition", price: 122490.00, rating: 4.8, reviews: 198, swift: false, img: "🏎️", tag: "", category: "Supercars" },
+  { id: 325, name: "Koenigsegg Jesko Absolut", price: 3000000.00, rating: 5.0, reviews: 34, swift: false, img: "🏎️", tag: "Limited Deal", category: "Supercars" },
+
+  // BOATS & YACHTS
+  { id: 326, name: "Sea Ray 320 Sundancer Cruiser", price: 189000.00, rating: 4.8, reviews: 143, swift: false, img: "🛥️", tag: "Best Seller", category: "Boats & Yachts" },
+  { id: 327, name: "Azimut S6 Sport Yacht 56ft", price: 890000.00, rating: 4.9, reviews: 87, swift: false, img: "🛥️", tag: "#1 Pick", category: "Boats & Yachts" },
+  { id: 328, name: "Sunseeker Predator 65 Motor Yacht", price: 1200000.00, rating: 4.9, reviews: 64, swift: false, img: "🛥️", tag: "Top Pick", category: "Boats & Yachts" },
+  { id: 329, name: "Pershing 9X Superyacht 94ft", price: 4500000.00, rating: 5.0, reviews: 43, swift: false, img: "🛥️", tag: "Limited Deal", category: "Boats & Yachts" },
+  { id: 330, name: "Ferretti Yacht 780 — 78ft Italian Luxury", price: 3200000.00, rating: 5.0, reviews: 38, swift: false, img: "🛥️", tag: "", category: "Boats & Yachts" },
+  { id: 331, name: "Boston Whaler 350 Realm Center Console", price: 299000.00, rating: 4.8, reviews: 112, swift: false, img: "🛥️", tag: "Top Pick", category: "Boats & Yachts" },
+  { id: 332, name: "Fountain 47 Lightning High Performance", price: 450000.00, rating: 4.8, reviews: 76, swift: false, img: "🛥️", tag: "", category: "Boats & Yachts" },
+  { id: 333, name: "Bennington 25 QSB Tritoon Pontoon", price: 89000.00, rating: 4.7, reviews: 187, swift: false, img: "🛥️", tag: "Best Seller", category: "Boats & Yachts" },
+  { id: 334, name: "Sea-Doo Switch 21 Cruise Pontoon", price: 34999.00, rating: 4.7, reviews: 231, swift: false, img: "🛥️", tag: "Top Pick", category: "Boats & Yachts" },
+  { id: 335, name: "Grady-White Canyon 336 Offshore", price: 379000.00, rating: 4.8, reviews: 98, swift: false, img: "🛥️", tag: "", category: "Boats & Yachts" },
+
+  // REAL ESTATE
+  { id: 336, name: "Miami Beach Waterfront Villa — 6,200 sq ft", price: 12500000.00, rating: 4.9, reviews: 43, swift: false, img: "🏠", tag: "#1 Pick", category: "Real Estate" },
+  { id: 337, name: "Beverly Hills Modern Mansion — 12,000 sq ft", price: 24900000.00, rating: 5.0, reviews: 31, swift: false, img: "🏠", tag: "Top Pick", category: "Real Estate" },
+  { id: 338, name: "Manhattan Penthouse — Central Park Views", price: 18750000.00, rating: 5.0, reviews: 28, swift: false, img: "🏢", tag: "Best Seller", category: "Real Estate" },
+  { id: 339, name: "Malibu Oceanfront Estate — 8,400 sq ft", price: 21000000.00, rating: 4.9, reviews: 19, swift: false, img: "🏠", tag: "", category: "Real Estate" },
+  { id: 340, name: "Aspen Mountain Ski Chalet — 5,800 sq ft", price: 8900000.00, rating: 4.9, reviews: 37, swift: false, img: "🏠", tag: "Top Pick", category: "Real Estate" },
+  { id: 341, name: "Tuscany Vineyard Estate — 40 Acres", price: 6500000.00, rating: 4.8, reviews: 52, swift: false, img: "🏡", tag: "", category: "Real Estate" },
+  { id: 342, name: "Dubai Marina Sky Penthouse — 360° Views", price: 9800000.00, rating: 4.9, reviews: 34, swift: false, img: "🏢", tag: "#1 Pick", category: "Real Estate" },
+  { id: 343, name: "Lake Como Waterfront Villa — Italy", price: 7200000.00, rating: 5.0, reviews: 27, swift: false, img: "🏡", tag: "Best Seller", category: "Real Estate" },
+  { id: 344, name: "Hamptons Beachfront Estate — 7,000 sq ft", price: 14500000.00, rating: 4.9, reviews: 22, swift: false, img: "🏠", tag: "Top Pick", category: "Real Estate" },
+  { id: 345, name: "Bali Private Island Retreat — 3 Villas", price: 4200000.00, rating: 4.8, reviews: 41, swift: false, img: "🏝️", tag: "", category: "Real Estate" },
+
+  // VACATION PACKAGES
+  { id: 346, name: "Maldives Overwater Bungalow — 7 Nights", price: 18500.00, rating: 4.9, reviews: 312, swift: false, img: "🌴", tag: "Best Seller", category: "Vacation Packages" },
+  { id: 347, name: "Bora Bora Honeymoon Package — 8 Nights", price: 22000.00, rating: 5.0, reviews: 187, swift: false, img: "🌴", tag: "#1 Pick", category: "Vacation Packages" },
+  { id: 348, name: "Amalfi Coast Private Yacht Week — Italy", price: 35000.00, rating: 4.9, reviews: 143, swift: false, img: "⛵", tag: "Top Pick", category: "Vacation Packages" },
+  { id: 349, name: "African Safari — Kenya & Tanzania 10 Days", price: 28000.00, rating: 4.9, reviews: 231, swift: false, img: "🦁", tag: "Best Seller", category: "Vacation Packages" },
+  { id: 350, name: "Santorini Cliffside Villa Stay — 6 Nights", price: 12500.00, rating: 4.9, reviews: 278, swift: false, img: "🏛️", tag: "Top Pick", category: "Vacation Packages" },
+  { id: 351, name: "Tokyo & Kyoto Luxury Rail Journey — 10 Days", price: 16000.00, rating: 4.8, reviews: 198, swift: false, img: "🗼", tag: "", category: "Vacation Packages" },
+  { id: 352, name: "Swiss Alps Helicopter Ski Trip — 4 Days", price: 19500.00, rating: 4.9, reviews: 112, swift: false, img: "🏔️", tag: "#1 Pick", category: "Vacation Packages" },
+  { id: 353, name: "Iceland Northern Lights Private Tour — 5 Days", price: 8900.00, rating: 4.8, reviews: 341, swift: false, img: "🌌", tag: "Best Seller", category: "Vacation Packages" },
+  { id: 354, name: "Amazon Jungle Luxury Lodge — 7 Nights", price: 11000.00, rating: 4.7, reviews: 156, swift: false, img: "🌿", tag: "", category: "Vacation Packages" },
+  { id: 355, name: "Antarctica Expedition Cruise — 21 Days", price: 45000.00, rating: 5.0, reviews: 87, swift: false, img: "🐧", tag: "Limited Deal", category: "Vacation Packages" },
+  { id: 356, name: "Patagonia Wilderness Trek — 12 Days", price: 9800.00, rating: 4.8, reviews: 198, swift: false, img: "🏔️", tag: "Top Pick", category: "Vacation Packages" },
+  { id: 357, name: "Dubai Ultra-Luxury City Break — 5 Nights", price: 14000.00, rating: 4.9, reviews: 267, swift: false, img: "🌆", tag: "Best Seller", category: "Vacation Packages" },
 ];
 const CATEGORIES = ["All", ...new Set(PRODUCTS.map(p => p.category))]; // v3
 const TRACKING_STEPS = ["Order Placed","Payment Confirmed","Preparing Your Order","Picked Up by Carrier","In Transit","Out for Delivery","Delivered!"];
