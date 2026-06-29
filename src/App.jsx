@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 // ── IMAGE HOOK ────────────────────────────────────────────────────────────────
 const CATEGORY_IMAGES = {
   Kitchen:        "https://images.pexels.com/photos/6996076/pexels-photo-6996076.jpeg?auto=compress&cs=tinysrgb&w=300",
