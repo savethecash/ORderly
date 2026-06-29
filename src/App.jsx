@@ -21,8 +21,9 @@ const CATEGORY_IMAGES = {
 
 function ProductImage({ product }) {
   const [err, setErr] = useState(false);
-  const url = CATEGORY_IMAGES[product.category];
-  if (err || !url) {
+  const keyword = product.name.split(" ").slice(0,3).join("+");
+  const url = `https://source.unsplash.com/300x200/?${keyword}`;
+  if (err) {
     return <div style={{ fontSize:40, textAlign:"center", marginTop: product.tag ? 16 : 8 }}>{product.img}</div>;
   }
   return (
