@@ -1,24 +1,5 @@
 import { useState } from "react";
 // ── IMAGE HOOK ────────────────────────────────────────────────────────────────
-const CATEGORY_IMAGES = {
-  Kitchen:        "https://images.pexels.com/photos/6996076/pexels-photo-6996076.jpeg?auto=compress&cs=tinysrgb&w=300",
-  Electronics:    "https://images.pexels.com/photos/3945667/pexels-photo-3945667.jpeg?auto=compress&cs=tinysrgb&w=300",
-  Sports:         "https://images.pexels.com/photos/1552242/pexels-photo-1552242.jpeg?auto=compress&cs=tinysrgb&w=300",
-  Home:           "https://images.pexels.com/photos/6316059/pexels-photo-6316059.jpeg?auto=compress&cs=tinysrgb&w=300",
-  Garden:         "https://images.pexels.com/photos/1161547/pexels-photo-1161547.jpeg?auto=compress&cs=tinysrgb&w=300",
-  Beauty:         "https://images.pexels.com/photos/3762879/pexels-photo-3762879.jpeg?auto=compress&cs=tinysrgb&w=300",
-  "Books & Office":"https://images.pexels.com/photos/733857/pexels-photo-733857.jpeg?auto=compress&cs=tinysrgb&w=300",
-  Clothing:       "https://images.pexels.com/photos/996329/pexels-photo-996329.jpeg?auto=compress&cs=tinysrgb&w=300",
-  "Pet Supplies": "https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&w=300",
-  "Toys & Games": "https://images.pexels.com/photos/1148998/pexels-photo-1148998.jpeg?auto=compress&cs=tinysrgb&w=300",
-  Automotive:     "https://images.pexels.com/photos/1178448/pexels-photo-1178448.jpeg?auto=compress&cs=tinysrgb&w=300",
-  Tools:          "https://images.pexels.com/photos/209235/pexels-photo-209235.jpeg?auto=compress&cs=tinysrgb&w=300",
-  Baby:           "https://images.pexels.com/photos/3662667/pexels-photo-3662667.jpeg?auto=compress&cs=tinysrgb&w=300",
-  "Food & Grocery":"https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=300",
-  Health:         "https://images.pexels.com/photos/3683074/pexels-photo-3683074.jpeg?auto=compress&cs=tinysrgb&w=300",
-  Travel:         "https://images.pexels.com/photos/1282315/pexels-photo-1282315.jpeg?auto=compress&cs=tinysrgb&w=300",
-};
-
 function ProductImage({ product }) {
   const [err, setErr] = useState(false);
   const keyword = product.name.split(" ").slice(0,3).join("+");
